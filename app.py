@@ -20,7 +20,7 @@ def lynn():
 def friends():
     return render_template('friends.html')
 
-@app.route('/help_center')
+@app.route('/helpcenter')
 def help_center():
     return render_template('helpcenter.html')
 

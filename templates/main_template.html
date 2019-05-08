@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Lynn - Lean On Me</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="Avatar background" /></span>
+							<h1 id="title">Ruby Atieno</h1>
+							<p>Content Person</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="{{ url_for('index') }}" id="top-link"><span class="icon fa-home">Home</span></a></li>
+								
+								<li><a href="{{ url_for('lynn') }}" id="portfolio-link"><span class="icon fa-th">Lynn</span></a></li>
+								
+								<li><a href="{{ url_for('friends') }}" id="about-link"><span class="icon fa-user">Friends</span></a></li>
+								
+								<li><a href="{{ url_for('help_center') }}" id="about-link"><span class="icon fa-user">Help Center</span></a></li>
+								
+								<li><a href="{{ url_for('settings') }}" id="contact-link"><span class="icon fa-envelope">Settings</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</div>
+
+			{% block content %}
+    		{% endblock %}
+
+    		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy;2019 Lynn - Lean On Me. All rights reserved.</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
