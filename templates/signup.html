@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lynn - Login</title>
+	<title>Lynn - Sign Up</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
@@ -10,34 +10,31 @@
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1>Login</h1>
+				<h1>Sign Up</h1>
 			</div>
 		</div>
 
-		<hr>	
-
-		{% if error %}
-        		<p class="error"><strong>Error:</strong> {{ error }}
-      	{% endif %}
-
-
+		<hr>
+		
 		<div id="container2" class="container">
-			<form action = "" method="post">
+			<form>
 			<!--Username-->
-			<label>Username</label>
-			<input type="text" name="username" value="{{ request.form.username }}" required/>	
+			<label>Email:</label>
+			<input type="text" name="email" required/>	
 			<br><br>
 			<!--Password-->
-			<label>Password</label>
-			<input type="password" name="password" value="{{ request.form.password }}" required/>
+			<label>Password:</label>
+			<input type="password" name="pass" required/>
+			<br><br>
+			<!--Confirm Password-->
+			<label>Confirm Password:</label>
+			<input type="password" name="confirmpass" required/>
 			<br>
-			<p class="new">New User? <a href="{{ url_for('signup') }}">Register here</a></p>
+			<p class="new">Already a member? <a href="{{ url_for('login') }}">Login</a></p>
 
 			<!--Submit-->
-			<input type="submit" class="button" value="Login"/>
-		
+			<input type="button" class="button" value="Sign Up"/>
 			</form>
-
 		</div>
 	</div>
 
