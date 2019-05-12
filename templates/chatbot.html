@@ -3,6 +3,7 @@
 <head>
 	<title>Chat with Lynn</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> 
 </head>
 
 <body>
@@ -17,19 +18,15 @@
 		
 		<div id="container2" class="container">
 			<form>
-			<div id="userchat">
 				<!--Username-->
 				<label>User</label>
-				<textarea rows=5 cols=34></textarea>	
+				<input id="userchat" type="text" name="userchat">	
 				<br><br>
-			</div>
 			
-			<div id="lynnchat">
 				<!--Password-->
 				<label>Lynn</label>
-				<textarea rows=5 cols=34></textarea>	
+				<input id= "lynnchat" type="text" name="lynnchat">	
 				<br><br>
-			</div>
 			
 			<!--Submit-->
 			<input type="button" class="button" value="Send"/>

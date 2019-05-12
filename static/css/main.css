@@ -55,6 +55,13 @@ form{
 	padding: 50px;
 }
 
+input[type="text"]{
+	height: 50px;
+	width: 190px;
+	margin-top: 16px;
+}
+
+
 .userchat{
 	display: inline-block;
 	text-align: left;
