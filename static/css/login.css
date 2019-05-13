@@ -1,0 +1,185 @@
+html, body{
+	height: 100%;
+}
+	
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #E4C65D;
+	font-family: 'Ebrima', arial;
+	font-size: 12pt;
+}
+
+hr{
+	width: 100%;
+	color: #E85D4B;
+	margin-top: 20px;
+	opacity: 0.4;
+}
+	
+h1{
+	margin: 0;
+	padding: 0;
+	font-family: 'Cabin Sketch', sans-serif;
+	color: #E85D4B;
+}
+	
+p{
+	text-align: center;
+	font-family: arial;
+	font-size: 18px;
+	color: #303030;
+
+}
+	
+img
+	{
+		display: block;
+		width: 100%;
+	}
+
+ul{
+	padding: 0;
+	list-style: none;
+}
+	
+a{
+	color: #E85D4B;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.container{
+	margin: 0px auto;
+	width: 1200px;
+}
+	
+/* Header */
+#header-wrapper{
+	padding: 32px 0px;
+	background: #FFFFFF;
+}
+
+#header{
+	position: relative;
+}
+
+/* Logo */
+#logo h1{
+	display: inline-block;
+	font-size: 3.5em;
+}
+
+/* Menu */
+#menu{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+	
+#menu ul li{
+	display: inline-block;
+	padding: 16px 32px 0px 32px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+#menu a{
+	background: #F67C78;
+	color: #FFFFFF;
+	padding: 20px 24px;
+	text-decoration: none;
+}
+
+/* Containers */
+#container2{
+	padding: 64px 0px 48px 0px;
+}
+
+.footer-container{
+	margin: 0px auto;
+	width: 100%;
+}
+
+
+#container3{
+	padding: 20px 0px;
+	height: 62px;
+	overflow: hidden;
+	background: #E85D4B;
+}
+
+#container3 p{
+	text-align: center;
+	color: #ffffff !important;
+	font-size: 16px;
+
+}
+
+/* Form Style */
+form{
+	height: 350px;
+	display: block;
+	text-align: left;
+	margin-left: 420px;
+	margin-right: 480px;
+	border: 2px solid #E85D4B;
+	padding: 50px;
+	border-radius: 15px;
+}
+
+/* Labels */
+label{
+	display: block;
+	font-size: 16px;
+	font-style: bold;
+}
+
+input[type="text"],
+input[type="password"]{
+	height: 24px;
+	width: 190px;
+	margin-top: 16px;
+}
+
+.new{
+	font-family: arial;
+	font-size: 16px;
+	color: #303030;
+}
+
+.new a{
+	font-family: 'Bookman Old Style' arial;
+	font-size: 16px;
+	color: #E85D4B !important;
+}
+
+
+.button{
+	display: inline-block;
+	float: right;
+	margin-top: 32px;
+	padding: 12px 20px;
+	background: #E85D4B;
+	border-radius: 10px;
+	font-size: 16px;
+	color: #FFFFFF;
+}
+
+#footer{
+	height: 62px;
+	background-color: #E85D4B;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 20px;
+	color: #ffffff !important;
+	font-size: 16px;
+}
+
+
+
