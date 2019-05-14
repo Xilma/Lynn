@@ -12,21 +12,28 @@
 			<div id="logo">
 				<h1>Chat</h1>
 			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="{{ url_for('login') }}">Logout</a></li>
+				</ul>
+			</div>
 		</div>
 
 		<hr>
 		
 		<div id="container2" class="container">
-			<form>
-				<!--Username-->
-				<label>User</label>
-				<input id="userchat" type="text" name="userchat">	
-				<br><br>
-			
-				<!--Password-->
-				<label>Lynn</label>
-				<input id= "lynnchat" type="text" name="lynnchat">	
-				<br><br>
+			<div class="chat-container">
+				<div id="userchat">
+					<label>User</label>
+					<textarea rows=5 cols=34></textarea>
+				</div>
+
+				<div>
+					<label>Lynn</label>
+					<textarea rows=5 cols=34></textarea>
+				</div>
+
+			</div>
 			
 			<!--Submit-->
 			<input type="button" class="button" value="Send"/>

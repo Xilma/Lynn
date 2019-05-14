@@ -25,8 +25,8 @@ h1{
 }
 
 .container{
-	margin: 0px auto;
-	width: 1200px;
+	margin: 5px auto;
+	width: 100%;
 }
 	
 /* Header */
@@ -43,6 +43,7 @@ h1{
 #logo h1{
 	display: inline-block;
 	font-size: 3.5em;
+	margin-left: 20px;
 }
 
 
@@ -61,23 +62,17 @@ input[type="text"]{
 	margin-top: 16px;
 }
 
-
-.userchat{
-	display: inline-block;
+#userchat{
+	position: relative;
 	text-align: left;
-	float: right;
-	border: 2px solid #E85D4B;
+	right: 0px;
+	left: 890px;
 	padding: 10px;
-	border-radius: 1opx;
 }
 
-.lynnchat{
-	display: inline-block;
-	text-align: left;
-	float: left;
-	border: 2px solid #E85D4B;
-	padding: 10px;
-	border-radius: 1opx;
+textarea{
+	border-radius: 10px;
+	border: 2px solid #ee3e80;
 }
 
 /* Labels */
@@ -100,7 +95,6 @@ label{
 
 #footer{
 	height: 62px;
-	background-color: #E85D4B;
 	overflow: hidden;
 	text-align: center;
 	margin-top: 0px;
@@ -111,6 +105,7 @@ label{
 
 /* Containers */
 #container2{
+	width: 1200px;
 	padding: 64px 0px 48px 0px;
 }
 
@@ -123,6 +118,7 @@ label{
 #container3{
 	padding: 20px 0px;
 	height: 62px;
+	width: 100%;
 	overflow: hidden;
 	background: #E85D4B;
 }
@@ -134,3 +130,30 @@ label{
 
 }
 
+.chat-container{
+	margin: 0px auto 0px auto;
+}
+
+/* Menu */
+#menu{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+	
+#menu ul li{
+	display: inline-block;
+	padding: 8px 20px 0px 32px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#menu a{
+	background: #F67C78;
+	color: #FFFFFF;
+	padding: 18px 22px;
+	text-decoration: none;
+	border-radius: 5px;
+}
