@@ -10,7 +10,7 @@
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1>Chat</h1>
+				<h1>Lynn - Lean on Me</h1>
 			</div>
 			<div id="menu">
 				<ul>
@@ -22,21 +22,22 @@
 		<hr>
 		
 		<div id="container2" class="container">
-			<div class="chat-container">
-				<div id="userchat">
-					<label>User</label>
-					<textarea rows=5 cols=34></textarea>
-				</div>
+			<form action="" method="post">
+				<div class="chat-container">
+					<div id="userchat">
+						<label>User</label>
+						<input type="text" name="userchat" value="{{ request.form.userchat }}"/>
+					</div>
 
-				<div>
-					<label>Lynn</label>
-					<textarea rows=5 cols=34></textarea>
-				</div>
+					<div>
+						<label>Lynn</label>
+						<input type="text" name="lynnchat" value="{{ request.form.lynnchat }}"/>
+					</div>
 
-			</div>
-			
-			<!--Submit-->
-			<input type="button" class="button" value="Send"/>
+				</div>
+				
+				<!--Submit-->
+				<input type="button" class="button" value="Send"/>
 			</form>
 		</div>
 	</div>

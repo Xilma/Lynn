@@ -70,9 +70,12 @@ input[type="text"]{
 	padding: 10px;
 }
 
-textarea{
+input[type="text"]{
+	height: 85px;
+	width: 280px;
 	border-radius: 10px;
 	border: 2px solid #ee3e80;
+	margin: 0px;
 }
 
 /* Labels */
