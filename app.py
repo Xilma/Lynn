@@ -23,7 +23,9 @@ def signup():
 def lynn():
     message = ""
     if request.method == 'POST':
-        message = request.form['message']      
+        message = request.form['message']
+        lynnchat = request.form['lynnchat']
+        
     return render_template('lynn.html', message=message)
 
 if __name__ == '__main__':

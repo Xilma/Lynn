@@ -25,13 +25,11 @@
 			<form action="" method="post">
 				<div class="chat-container">
 					<div id="userchat">
-						<label>User</label>
-						<input type="text" class="chat" name="userchat" value="{{ message }}"/>
+						<input type="text" class="chatuser" name="userchat" value="{{ message }}"/>
 					</div>
 
 					<div>
-						<label>Lynn</label>
-						<input type="text" class="chat" name="lynnchat" value="{{ request.form.lynnchat }}"/>
+						<input type="text" class="chatlynn" name="lynnchat" value="{{ request.form.lynnchat }}"/>
 					</div>
 
 				</div>
