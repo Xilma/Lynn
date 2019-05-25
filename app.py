@@ -19,9 +19,12 @@ def login():
 def signup():
     return render_template('signup.html')
 
-@app.route('/lynn')
+@app.route('/lynn', methods=['GET', 'POST'])
 def lynn():
-    return render_template('lynn.html')
+    message = ""
+    if request.method == 'POST':
+        message = request.form['message']      
+    return render_template('lynn.html', message=message)
 
 if __name__ == '__main__':
 	app.run(debug=True)

@@ -26,18 +26,22 @@
 				<div class="chat-container">
 					<div id="userchat">
 						<label>User</label>
-						<input type="text" name="userchat" value="{{ request.form.userchat }}"/>
+						<input type="text" class="chat" name="userchat" value="{{ message }}"/>
 					</div>
 
 					<div>
 						<label>Lynn</label>
-						<input type="text" name="lynnchat" value="{{ request.form.lynnchat }}"/>
+						<input type="text" class="chat" name="lynnchat" value="{{ request.form.lynnchat }}"/>
 					</div>
 
 				</div>
-				
+
+				<hr>
+		
+				<!-- User input message textbox -->
+				<input type="text" class="message" name="message" placeholder="Type your message"/>
 				<!--Submit-->
-				<input type="button" class="button" value="Send"/>
+				<input type="submit" class="button" value="Send"/>
 			</form>
 		</div>
 	</div>
