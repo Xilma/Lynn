@@ -21,10 +21,13 @@ def signup():
 
 @app.route('/lynn', methods=['GET', 'POST'])
 def lynn():
-    message = ""
-    if request.method == 'POST':
-        message = request.form['message']
-        lynnchat = request.form['lynnchat']
+    message = None
+    if message == "":
+        return render_template('lynn.html', message=message)
+    else:
+        if request.method == 'POST':
+            message = request.form['message']
+            lynnchat = request.form['lynnchat']
         
     return render_template('lynn.html', message=message)
 
