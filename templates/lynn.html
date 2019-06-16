@@ -10,26 +10,36 @@
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1>Chat</h1>
+				<h1>Lynn - Lean on Me</h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="{{ url_for('login') }}">Logout</a></li>
+				</ul>
 			</div>
 		</div>
 
 		<hr>
 		
 		<div id="container2" class="container">
-			<form>
-				<!--Username-->
-				<label>User</label>
-				<input id="userchat" type="text" name="userchat">	
-				<br><br>
-			
-				<!--Password-->
-				<label>Lynn</label>
-				<input id= "lynnchat" type="text" name="lynnchat">	
-				<br><br>
-			
-			<!--Submit-->
-			<input type="button" class="button" value="Send"/>
+			<form action="" method="post">
+				<div class="chat-container">
+					<div id="userchat">
+						<input type="text" class="chatuser" name="userchat" value="{{ message }}"/>
+					</div>
+
+					<div>
+						<input type="text" class="chatlynn" name="lynnchat" value="{{ request.form.lynnchat }}"/>
+					</div>
+
+				</div>
+
+				<hr>
+		
+				<!-- User input message textbox -->
+				<input type="text" class="message" name="message" placeholder="Type your message"/>
+				<!--Submit-->
+				<input type="submit" class="button" value="Send"/>
 			</form>
 		</div>
 	</div>

@@ -97,7 +97,7 @@ a:hover{
 
 /* Containers */
 #container2{
-	padding: 64px 0px 48px 0px;
+	padding: 64px auto 48px auto;
 }
 
 .footer-container{
@@ -108,6 +108,7 @@ a:hover{
 
 #container3{
 	padding: 20px 0px;
+	width: 100%;
 	height: 62px;
 	overflow: hidden;
 	background: #E85D4B;
