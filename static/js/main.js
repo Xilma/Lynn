@@ -7,7 +7,7 @@ function submit_message(message){
     function handle_response(data) {
           // append the bot repsonse to the div
           $('.chat-container').append(`
-                <div class="chat-message col-md-5 offset-md-7 bot-message">
+                <div class="chat-message col-md-5 bot-message">
                     ${data.message}
                 </div>
           `)
@@ -26,14 +26,14 @@ $('#target').on('submit', function(e){
         }
 
         $('.chat-container').append(`
-            <div class="chat-message col-md-5 human-message">
+            <div class="chat-message col-md-5 offset-md-7 human-message">
                 ${input_message}
             </div>
         `)
 
         // loading 
         $('.chat-container').append(`
-            <div class="chat-message text-center col-md-2 offset-md-10 bot-message" id="loading">
+            <div class="chat-message text-center col-md-5 bot-message" id="loading">
                 <b>...</b>
             </div>
         `)
